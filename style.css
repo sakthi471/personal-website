@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containear{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+    
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+    
+}
+
+.name p{
+  font-size: 30px;
+  font-weight: 900;
+  background: linear-gradient(#be1e2d,#3b5998);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color:transparent;
+  /* text-fill-color:transparent; */
+  clear: #3b5996;
+
+}
+.name{
+   margin-left: -20px;
+   margin-top: 50px;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-left: 60px;
+    
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-left: 50px;
+    
+
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+   color: orangered;
+}
+
+.content{
+    width: 45%;
+    margin-left: 150px;
+    margin-top: 120px;
+    
+   
+}
+.content h3 ,h1{
+    font-size: 70px;  
+    line-height: 100px;
+}
+.content h3{
+    font-weight: 300;
+}
+.about{
+    width: 70%;
+    margin: auto;
+    font-size: 23px;
+    margin-top: 100px;
+    line-height: 40px;
+    
+}
+ .about {
+    text-align: center;
+ }
+ .qualification{
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 100px;
+    
+ }
+ .school  {
+    width: 100%;
+    margin-top: 40px;
+ }
+ .school img {
+    float: right;
+    width: 60px;
+    margin-right: 100px;
+ }
+ .college img{
+     float: left;
+     width: 80px;
+     margin-right: 60px;
+ }
+ .college{
+    margin-top:80px;
+ }
+ .links{
+    margin: auto;
+    margin-top: 60px;
+    width: 35%;
+    padding: 40px;
+    
+ }
+ .links a img{
+      width: 30px;
+      margin-left:40px ; 
+ }
+ .achievement {
+    width: 30%;
+    margin: auto;
+   text-align: center;
+   margin-top: 100px;
+ }
+ .achievement img{
+    margin-left: 20px;
+    opacity: 0.5;
+ }
+ .achievement h1{
+    font-size: 40px;
+ }
+ .contact h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+ }
+
+ .contact.links img{
+     width: 700px;
+ }
+ .blogs, .myblogs{
+    width: 100%;
+    height: 80%;
+ }
+ .blogs .heading h1{
+    text-align: center;
+   
+ }
+ .heading {
+    font-size: 40px;
+    text-align: center;
+
+ }
+  .myblogs{
+    width: 95%;
+    display: flex;
+    /* border: 2px solid orangered; */
+    margin: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 280px;
+    margin-top: 20px;
+    
+  }
+  .row{
+    width: 250px;
+    height: 300px;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    position: relative;
+    background-color:white;
+    box-shadow: 5px 5px 10px #00000066;;
+    padding: 40px;
+  }
+  .row h4{
+    text-align: center;
+    font-size: 18px;
+        font-weight: 600;
+    
+  }
+  .row p{
+    font-size: 20px;
+        font-weight: 200;
+  }
+  
+  
+  .row a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-size: 20px;
+    transition: 500ms;
+    font-weight: 700;
+ }
+    .btn:hover{
+    color: rgb(219, 64, 8);
+    transform: translateY(-5px);
+ }
+ .img img {
+    width: 250px;
+    position: absolute;
+    right:130px;
+    top: 300px;
+    
+ }
+ .img img{
+    animation: imgrotate 50s infinite linear;
+ }
+ @keyframes imgrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ }
+ .blogs{
+   width: 100%;
+   display: flex;
+   margin-top: 50px;
+   justify-content:center ;
+   margin-bottom: 20px;
+ }
+ .blogs .blog1{
+   width: 70%;
+   text-align: center;
+   font-size: 23px;
+   line-height: 44px;
+   font-weight: 100;
+  }
+ span {
+   display: none;
+ }
+ .closebtn {
+   display: none;
+ }
+
+
+
+
+@media screen and (max-width:700px) {
+
+  
+   .img img {
+      display: none;
+   }
+  
+   .logo  img{
+      
+      margin-right: 20px;
+   }
+  
+   .content{
+      margin-left: 50px;
+      margin-top: 40px;
+   }
+   .content h3{
+      font-size: 40px;
+      line-height: 55px;
+   }
+   .content h1{
+      font-size: 50px;
+      line-height: 60px;
+   }
+   .about{
+      margin-top: 60px;
+   }
+   .content p{
+      margin-top: 20px;
+   }
+   .about h2 {
+      font-size: 24px;
+   }
+   .h3{
+      font-size: 19px;
+   }
+   .about p{
+      font-size: 19px;
+      line-height: 30px;
+   }
+   .qualification{
+      margin-top: 40px;
+      
+   }
+    .qualification h3{
+      font-size:19px;
+    }
+    .school,.college p{
+       font-size: 19px;
+       line-height: 30px;
+    }
+    .college img{
+      float: right;
+    }
+    .links a img{
+      width: 25px;
+      margin-left: 30px;
+    }
+    .links{
+      width:100%;
+      margin-top: 19px;
+    }
+
+     .achievement img{
+       width: 130px;
+     }
+     .achievement h1{
+      font-size: 20px;
+     }
+     .achievement {
+      width: 70%;
+      margin-top: 30px;
+     }
+     .contact h1{
+      font-size: 25px;
+     }
+     .heading{
+      font-size: 23px;
+     }
+     .myblogs{
+       flex-wrap: wrap;
+       margin-top: 20px;
+       width: 90%;
+       
+     }
+     .row{
+      margin-top: 30px;
+      height: 279px;
+     }
+     .bl{
+      margin-top: 700px;
+     }
+   .blog1 h2{
+      font-size: 23px;
+   }
+   .blog1 p{
+      font-size: 19px;
+      line-height:30px;
+
+   }
+  
+   nav ul{
+      width: 100%;
+      background-color:rgb(128, 126, 124);
+      position: absolute;
+      top:105px;
+      right: 0;
+      z-index: 2;
+      height: 560px;
+      opacity: 1;
+      
+
+   }
+   .menu-icon{
+      display: block;
+      margin-top: 35px;
+   }
+   
+  
+   nav ul li{
+      display: block;
+      margin-top: 55px;
+      text-align: center;
+   }
+   nav ul li a {
+      color: white;
+      font-size: 21px;
+      font-weight: 700;
+   }
+   #menulist{
+      overflow: hidden;
+      transition: 0.5s;
+      margin-left: 50px;
+   }
+   .logo{
+      margin-left: 0;
+   }
+   
+} 
+
